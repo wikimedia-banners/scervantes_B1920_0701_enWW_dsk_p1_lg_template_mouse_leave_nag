@@ -1,6 +1,6 @@
 <!-- Large desktop banner. Must be used with "Large banner limit and switch" mixin -->
 
- <!-- CREATED AT: 2019-09-23T15:23:48+00:00 -->
+ <!-- CREATED AT: 2019-09-23T15:26:48+00:00 -->
 
 <style>
 /* Hide when editing */
@@ -1388,14 +1388,15 @@ button.frb-nag-btn:hover {
 .frb.dark {
     background-color: #000; 
 }
-.frb.dark.frb-in-article {
+.frb-in-article.dark {
     width: 100%;
     height: 100%;
     position: fixed;
     left: 0;
     top: 0;
+    z-index: 1;
 }
-.frb.dark .frb-layout {
+.frb-in-article.dark .frb-layout {
     position: relative;
     display: table;
     width: 100%;
@@ -1404,69 +1405,71 @@ button.frb-nag-btn:hover {
     max-width: 1200px;
     margin: 0 auto;
 }
-.frb.dark .frb .frb-close {
+.frb-in-article.dark .frb .frb-close {
     outline: none;
+    background-image: none;
 }
-.frb.dark .frb .frb-back {
+.frb-in-article.dark .frb .frb-back {
     outline: none;
+    background-image: none;
 }
-.frb.dark .frb-message {
+.frb-in-article.dark .frb-message {
     color: #FFF;
 }
-.frb.dark .frb-message-inner {
+.frb-in-article.dark .frb-message-inner {
    border: none;
    background: transparent;
 }
-.frb.dark .frb-form-wrapper {
+.frb-in-article.dark .frb-form-wrapper {
     background: transparent;
     color: white;
 }
-.frb.dark .frb-form-wrapper legend,
-.frb.dark .frb-rml-form-legend {
+.frb-in-article.dark .frb-form-wrapper legend,
+.frb-in-article.dark .frb-rml-form-legend {
     color: white;
 }
-.frb.dark .frb-rml-link {
+.frb-in-article.dark .frb-rml-link {
     color: white;
 }
-.frb.dark .frb-radio-label {
+.frb-in-article.dark .frb-radio-label {
     color: white;
 }
-.frb.dark #frb-amt-other-input::-webkit-input-placeholder {
+.frb-in-article.dark #frb-amt-other-input::-webkit-input-placeholder {
     color: #FFF;
 }
-.frb.dark #frb-amt-other-input::-moz-placeholder {
+.frb-in-article.dark #frb-amt-other-input::-moz-placeholder {
     opacity: 1;
     color: #FFF;
 }
-.frb.dark #frb-amt-other-input:-ms-input-placeholder {
+.frb-in-article.dark #frb-amt-other-input:-ms-input-placeholder {
     color: #FFF;
 }
-.frb.dark #frb-amt-other-input:-moz-placeholder {
+.frb-in-article.dark #frb-amt-other-input:-moz-placeholder {
     opacity: 1;
     color: #FFF;
 }
-.frb.dark #frb-amt-other-input {
+.frb-in-article.dark #frb-amt-other-input {
     border-bottom: 1px solid #FFF;
     color: unset;
 }
-.frb.dark .frb-checkbox-label {
+.frb-in-article.dark .frb-checkbox-label {
     color: unset;
 }
-.frb.dark .frb-submit.active .frb-icon-lock {
+.frb-in-article.dark .frb-submit.active .frb-icon-lock {
     fill: white;
 }
-.frb.dark .frb-icon-lock {
+.frb-in-article.dark .frb-icon-lock {
     fill: #36c;
 }
-.frb.dark input[type="text"] {
+.frb-in-article.dark input[type="text"] {
     background: transparent;
     color: white;
 }
 
-.frb.dark .frb-monthly-diff-amt-link {
+.frb-in-article.dark .frb-monthly-diff-amt-link {
     color: #FFF;
 }
-.frb.dark .frb-footer {
+.frb-in-article.dark .frb-footer {
     display: none;
 }
 </style>
