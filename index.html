@@ -2021,6 +2021,10 @@ $(function() {
 
     };
 
+    $('body').mouseleave(function(e) {
+        $('.frb').addClass('dark');
+    })
+
     $('.frb-amounts').on('input change', function(e) {
         var target = $(e.target);
         if ( target.attr('id') !== 'input_amount_other' ) {
